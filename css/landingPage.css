@@ -2,24 +2,67 @@ body {
   margin: 0;
 }
 .header {
-  position: absolute;
-  top: 0px;
-  left: 30%;
-  align-items: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0px 0px 90px 0px;
+  width: 100%;
   z-index: 4;
 }
-.header p {
+.header-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   color: white;
   font-family: abril-display, serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300;
+  font-style: light;
   font-size: 14px;
   text-transform: uppercase;
   background-color: transparent;
   z-index: 4;
+}
+ul {
+  display: flex;
+  margin: 20px;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+  margin: 0px 10px 0px 10px;
+}
+
+li:first-child {
+  display: flex-start;
+  position: absolute;
+  top: 12px;
+  left: 2%;
+}
+.header-container a {
+  text-decoration: none;
+  color: white;
+}
+.header-container a:hover {
+  color: #e39c88;
+}
+.header-container a:after {
+  color: #e39c88;
+  font-weight: 600;
+}
+.entire-page {
+  position: relative;
+  top: -165px;
 }
 .section {
   position: relative;
@@ -31,6 +74,8 @@ body {
   overflow: hidden;
 }
 .hero-text {
+  position: relative;
+  top: 15%;
   text-align: center;
   color: white;
   z-index: 1;
@@ -45,7 +90,7 @@ body {
 }
 .section h3 {
   position: relative;
-  top: 100px;
+  top: 30px;
   text-align: center;
   color: white;
   font-size: 4em;
@@ -53,12 +98,30 @@ body {
   margin: 20px;
   padding: 15px;
 }
+.hero-text svg:hover {
+  transform: translatey(20px);
+  color: #e39c88;
+}
+.hero-text svg:visited {
+  color: #e39c88;
+}
 
+.hero-text a:active {
+  transform: translatey(20px);
+  color: #e39c88;
+}
+
+.hero-text a:visited {
+  transform: translatey(20px);
+  color: #e39c88;
+}
 .video-container {
   position: absolute;
   top: 0;
   left: 0;
+  height: 70%;
   width: 100%;
+  padding: 20px 0px 60px 0px;
 }
 
 .color-overlay {
@@ -72,7 +135,7 @@ body {
 }
 
 .text-section {
-  margin: 50px;
+  margin: 0px;
 }
 .title {
   margin: 50px 0px;
@@ -140,6 +203,14 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.photo-title a {
+  text-decoration: none;
+  color: white;
+}
+.photo-title a:hover {
+  color: #e39c88;
+}
+
 .subscribe-section {
   margin: 0px;
 }
