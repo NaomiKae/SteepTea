@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Welcome to Steep</title>
+  <meta name="description" content="steep tea sample">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://use.typekit.net/xot5tho.css">
+
+</head>
+
+<body>
+
+  <!-- Top nav -->
+  <header class="global-header" id="top-nav">
+    <section class="nav-left">
+      <div class="logo">
+        <img src="https://assets.codepen.io/4730679/steep-logo-white.png" width="100%" />
+      </div>
+      <!-- <ul class="nav">
+        <li id="menu-1-button">Why Slack?</li>
+        <li id="menu-2-button">Solutions</li>
+        <li id="menu-3-button">Resources</li>
+        <li>Pricing</li>
+      </ul> -->
+    </section>
+    <section class="nav-right">
+      <!-- <p class="workspaces">Your Workspaces</p> -->
+      <ul>
+        <li><a href="#">TEAS</a></li>
+        <li><a href="#">MERCH</a></li>
+        <li><a href="#">DRINKWARES</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">WHOLESALE</a></li>
+        <li><button class="cart" onclick="document.getElementById('id01').style.display='block'"><a href="#">CART</a></button>
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="imgcontainer">
+                <img src="https://assets.codepen.io/4730679/steep-logo.png" width="100%" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" style="background-color:#c99b8d">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+              <div class="container" style="background-color:#f1f1f1">
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <section class="hero">
+    <div class="hero-video">
+      <!-- The video -->
+      <div class="div1">
+        <video autoplay muted loop id="myVideo">
+          <source src="https://assets.codepen.io/4730679/adobestock-236532331-video-4k-pdreview_6llmLEgl.mov" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    </div>
+    <d class="hero-text">
+      <div class="hero-headline">let's get to steepin'
+      </div>
+      <button class="hero-button">SHOP NOW</button>
+  </section>
+
+  <div class="main"></div>
+  <section class="tea-samples">
+    <div class="tea-samples-text">
+      <h1>All of your favorite teas, all under one roof.</h1>
+      <h3>try our mini teas samplers for a limited time.</h3>
+      <p>here until May 2021</p>
+    </div>
+    <div class="tea-samples-imgs">
+      <img src="https://assets.codepen.io/4730679/Asset+1%402x_2.png" width="80%" />
+    </div>
+  </section>
+  <!-- samples -->
+  <section class="grid-container">
+    <div class="flex-img">
+      <div class="photo-color-overlay"></div>
+      <div class="photo-title"><a href="#">Sample</a></div>
+      <img class="loose-tea" src="https://assets.codepen.io/4730679/Asset+4%402x_1.png" width=100%>
+
+    </div>
+
+    <div class="flex-img">
+      <div class="photo-color-overlay"></div>
+      <div class="photo-title"><a href="#">Taste</a></div>
+      <img class="tea-mug" src="https://assets.codepen.io/4730679/Asset+3%402x_2.png" width=100%>
+    </div>
+    <div class="flex-img">
+      <div class="photo-color-overlay"></div>
+      <div class="photo-title"><a href="#">Buy</a></div>
+      <img class="tea-shop" src="https://assets.codepen.io/4730679/Asset+5%402x_1.png" width=100%>
+
+    </div>
+  </section>
+  </section>
+  <!--subscribe form-->
+  <div class="subscribe-section">
+    <hr>
+    <h2>let's get to steepin</h2>
+    <div class="subscribe-container">
+      <div class="subscribe-text">
+        <p>sign up today to recieve our news letter featuring exlcusive offers</p>
+      </div>
+      <form class="form-inline" action="/action_page.php">
+        <input type="email" id="email" placeholder="Enter email" name="email">
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <hr>
+  </div>
+  <!--about section-->
+  <div class="about-section">
+    <div class="about-title">
+      <p>A little About Us</p>
+    </div>
+    <div class="about-content">
+      <div class="ethically">
+        <h1>Everything is ethically sourced.</h1>
+      </div>
+      <div class="ethically-copy">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </p>
+      </div>
+    </div>
+  </div>
+
+</body>
